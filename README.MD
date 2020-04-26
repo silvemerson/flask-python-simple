@@ -1,4 +1,4 @@
-## Flask Simples em python
+## Flask Simples em Python
 
 Esse projeto é o provisionamento em container de um flask simples em Python. O objetivo é simples,
 fazer o build da imagem, criar o container e realizadar uma chamada para essa aplicação. 
