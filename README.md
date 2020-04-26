@@ -11,4 +11,4 @@ exemplo: curl -H "Authorization: Token VALOR_DA_PASS" http://localhost/
 
 Criando container:
  
-docker run --name flask-app-py -d -p 80:80 silvemerson/flask-python-simple:latest
+docker run --name flask-app-py -d -p 80:80 -e MY_PASS=$MY_PASS silvemerson/flask-python-simple:latest
