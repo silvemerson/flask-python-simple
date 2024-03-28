@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/simple-api', '-f workspace/cloud-build-labs/flask-python-simple/simple-flask-python/Dockerfile']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/simple-api', '-f' , 'workspace/cloud-build-labs/flask-python-simple/simple-flask-python/Dockerfile']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/bexup-devopslabs/simple-flask-python-api']
 - name: 'gcr.io/cloud-builders/gcloud'
