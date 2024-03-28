@@ -1,4 +1,6 @@
 steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/silvemerson/flask-python-simple.git', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/bexup-devopslabs/simple-api', '.']
 - name: 'gcr.io/cloud-builders/docker'
