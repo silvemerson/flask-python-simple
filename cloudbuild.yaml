@@ -2,8 +2,8 @@ steps:
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/silvemerson/flask-python-simple.git', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/bexup-devopslabs/simple-api:latest', '.']
+  args: ['build', '-t', 'gcr.io/bexup-devopslabs/simple-flask-python-api:latest', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/bexup-devopslabs/simple-flask-python-api:latest']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'simple-flask-python', '--image', 'gcr.io/bexup-devopslabs/simple-flask-python-api', '--platform', 'managed']
+  args: ['run', 'deploy', 'simple-flask-python', '--image', 'gcr.io/bexup-devopslabs/simple-flask-python-api:latest', '--platform', 'managed']
